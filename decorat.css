@@ -1,10 +1,12 @@
 :root{
-  scroll-behavior: smooth;
-  /* Fuente del título de portada: cambia aquí si quieres otra */
+scroll-behavior: smooth;
+
   --font-family: 'Arial Black', sans-serif;
   --font-title: 'Playfair Display', serif;
-  --turquesa-oscuro: #008B8B;
-  --turquesa-claro: #20B2AA;
+
+  /* NUEVA PALETA PAPÁ */
+  --turquesa-oscuro: #1E3A8A; /* Azul oscuro */
+  --turquesa-claro: #38BDF8;  /* Celeste */
 }
 body,html{
   font-family: Roboto Mono, monospace;
@@ -13,7 +15,9 @@ body,html{
   font-style: normal;
   color: #fff;
 
-  background: linear-gradient(rgba(0, 139, 139, 0.7), rgba(32, 178, 170, 0.7)),
+  background: linear-gradient( rgba(0, 139, 139, 0.7),
+                               rgba(32, 178, 170, 0.7)
+                             ),
               url('imagenes/fondo-cumple.jpg');
 
   background-size: cover;
@@ -545,7 +549,7 @@ body,html{
 
 /*VISTA DEL PIE DE PAGINA*/
 .footer {
-  background: #1a0a3d;
+  background: #0F172A;
   color: white;
   padding: 40px 20px;
 }
@@ -681,26 +685,6 @@ body,html{
   font-style: italic;
 }
 
-/* Estilos para el enlace del Día de la Madre */
-.menu-navegacion a.dia-madre-link {
-  background: linear-gradient(90deg, #DDA0DD, #E6E6FA);
-  border-left-color: #DDA0DD;
-}
-
-.menu-navegacion a.dia-madre-link:hover {
-  background-color: rgba(221, 160, 221, 0.3);
-  transform: translateX(4px);
-}
-
-.menu-navegacion a.dia-madre-link.activo {
-  background: linear-gradient(90deg, #DDA0DD, #E6E6FA);
-  border-left-color: #E6E6FA;
-}
-
-/* Estilos para la sección del Día de la Madre */
-.dia-madre-section .card {
-  background-color: rgba(221, 160, 221, 0.15);
-}
 
 .dia-madre-section .imagen-tabla {
   border: 3px solid #DDA0DD;
