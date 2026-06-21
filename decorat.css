@@ -5,8 +5,8 @@ scroll-behavior: smooth;
   --font-title: 'Playfair Display', serif;
 
   /* NUEVA PALETA PAPÁ */
-  --turquesa-oscuro: #1E3A8A; /* Azul oscuro */
-  --turquesa-claro: #38BDF8;  /* Celeste */
+  --azul-oscuro: #1E3A8A;
+  --azul-claro: #60A5FA;
 }
 body,html{
   font-family: Roboto Mono, monospace;
@@ -15,8 +15,8 @@ body,html{
   font-style: normal;
   color: #fff;
 
-  background: linear-gradient( rgba(0, 139, 139, 0.7),
-                               rgba(32, 178, 170, 0.7)
+  background: linear-gradient(  rgba(30, 58, 138, 0.7),
+    rgba(59, 130, 246, 0.7)
                              ),
               url('imagenes/fondo-cumple.jpg');
 
@@ -146,7 +146,7 @@ body,html{
   width: 260px;
   height: 100vh;
    backdrop-filter: blur(10px);
-   background: linear-gradient(180deg, var(--turquesa-oscuro), var(--turquesa-claro));
+   background: linear-gradient(180deg, var(--azul-oscuro),var(--azul-claro));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -215,11 +215,11 @@ body,html{
 
 .menu-navegacion a.activo{
   background: linear-gradient(90deg, var(--turquesa-oscuro), var(--turquesa-claro));
-  border-left-color: #20B2AA;
+  border-left-color: var(--azul-claro);
 }
 
 .menu-navegacion a:focus-visible{
-  outline: 2px solid var(--turquesa-claro);
+  outline: 2px solid var(--azul-claro);
 }
 
 .intro-ejemplos{
@@ -687,5 +687,5 @@ body,html{
 
 
 .dia-madre-section .imagen-tabla {
-  border: 3px solid #DDA0DD;
+  border: 3px solid var(--azul-claro);
 }
